@@ -17,11 +17,21 @@
                 <h1>Random Colour Palettes</h1>
                 <p> für Marvo </p>
                 </div>
-                <div class="line" onload="fetchapi()"></div>
+                <div class="line"></div>
+                <div class = "wrap">
+                    <p class ="colour" id="colour">Loading...</p>
+                    <select onchange="chColour()" id="colourChoose">
+                        <option disabled selected hidden>Base-Colour</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
             </main>    
         <footer>
             <a href="https://lennard-on.github.io/">made by lennox ⚡</a>
         </footer>
     </body>
     <script type ="text/javascript" src="scripts\fetchapi.js"></script>
+    <script type ="text/javascript" src="scripts\chColour.js"></script>
 </html>

@@ -2,6 +2,8 @@ $.getJSON('https://www.colourlovers.com/api/palettes/random?jsonCallback=?&numRe
 
     var element = data[0];
 
+    document.getElementById("colour").innerText = element.colors;
+
     $('body').css({
         "background-image": "url("+ element.imageUrl +")"
     });
